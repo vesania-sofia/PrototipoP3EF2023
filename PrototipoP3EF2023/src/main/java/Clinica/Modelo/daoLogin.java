@@ -17,7 +17,7 @@ import java.util.List;
 public class daoLogin {
 
     private static final String SQL_SELECT = "SELECT pk_idUser, usuario, contraseña, estado FROM tbl_login";
-    private static final String SQL_INSERT = "INSERT INTO tbl_login(usuario, contraseña, estado) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    private static final String SQL_INSERT = "INSERT INTO tbl_login(pk_idUser usuario, contraseña, estado) VALUES(?, ?, ?, ?)";
     private static final String SQL_UPDATE = "UPDATE tbl_login SET usuario=?, contraseña=?,  estado=?  WHERE pk_idUser = ?";
     private static final String SQL_DELETE = "DELETE FROM tbl_login WHERE usuid=?";
     private static final String SQL_SELECT_NOMBRE = "SELECT pk_idUser, usuario, contraseña, estado FROM tbl_login WHERE usuario = ?";

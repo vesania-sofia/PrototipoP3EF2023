@@ -369,7 +369,7 @@ int codigoAplicacion=10;
             limpiarTextos();
         }else{
             JOptionPane.showMessageDialog(null, "La contraseña debe ser la misma, vuelva a intentarlo\n", 
-                    txtIDn del Sistema", JOptionPane.INFORMATION_MESSAGE);
+                    "informacion del Sistema", JOptionPane.INFORMATION_MESSAGE);
             contador++;
             if(contador==5){
                 JOptionPane.showMessageDialog(null, "Demasiados intentos fallidos, espere 5min. Se le recomienda no tocar nada.", 
