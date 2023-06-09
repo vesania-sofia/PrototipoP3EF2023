@@ -47,6 +47,7 @@ public class MdiSeguridad extends javax.swing.JFrame {
         mnuCatalogosMantenimientos = new javax.swing.JMenu();
         mantenimientoUsuarios = new javax.swing.JMenuItem();
         mantenimientoPerfiles = new javax.swing.JCheckBoxMenuItem();
+        MantenimientoPaciente = new javax.swing.JCheckBoxMenuItem();
         mnuProcesos = new javax.swing.JMenu();
         aplicacionesUsuarios = new javax.swing.JMenuItem();
         mnuConsultas = new javax.swing.JMenu();
@@ -121,6 +122,10 @@ public class MdiSeguridad extends javax.swing.JFrame {
             }
         });
         mnuCatalogosMantenimientos.add(mantenimientoPerfiles);
+
+        MantenimientoPaciente.setSelected(true);
+        MantenimientoPaciente.setText("Mantenimiento Paciente");
+        mnuCatalogosMantenimientos.add(MantenimientoPaciente);
 
         mnuCatalogos.add(mnuCatalogosMantenimientos);
 
@@ -274,6 +279,7 @@ public class MdiSeguridad extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBoxMenuItem MantenimientoPaciente;
     private javax.swing.JMenuItem aplicacionesUsuarios;
     private javax.swing.JCheckBoxMenuItem consultaBitacora;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;

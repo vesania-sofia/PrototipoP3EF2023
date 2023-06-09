@@ -1,5 +1,6 @@
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Modelo\daoLogin.java
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Vista\frmLogin.java
+C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Controlador\clsPaciente.java
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Controlador\clsTipoUsuario.java
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Vista\MdiSeguridad.java
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Controlador\clsLogin.java
@@ -11,6 +12,7 @@ C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Vista\frmMantenimientoTipoUsuario.java
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Vista\frmMantenimientoLogin.java
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Modelo\Conexion.java
+C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Modelo\daoPaciente.java
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Modelo\daoTipoUsuario.java
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Vista\frmMantenimientoPerfil.java
 C:\Users\Sofi\Documents\progra3\EXAMEN FINAL\PrototipoP3EF2023\PrototipoP3EF2023\src\main\java\Clinica\Modelo\daoBitacora.java
