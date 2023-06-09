@@ -37,31 +37,31 @@ int codigoAplicacion=10;
     public void llenadoDeTablas() {
         DefaultTableModel modelo = new DefaultTableModel();
         modelo.addColumn("ID");
-        modelo.addColumn("Nombre Usuario");
-        modelo.addColumn("Contraseña");
-        modelo.addColumn("Última sesión");
-        modelo.addColumn("Estatus");
-        modelo.addColumn("Nombre Real");
-        modelo.addColumn("Correo");
-        modelo.addColumn("Teléfono");
-        modelo.addColumn("Dirección");
-        modelo.addColumn("Tipo Usuario");
-        clsPaciente usuario = new clsPaciente();
+        modelo.addColumn("Nombre");
+        modelo.addColumn("apellido");
+        modelo.addColumn("fecha");
+        modelo.addColumn("genero");
+        modelo.addColumn(" direccion");
+        modelo.addColumn("telefono");
+        modelo.addColumn("estado");
+        modelo.addColumn("referencia");
+
+        clsPaciente paciente = new clsPaciente();
         //VendedorDAO vendedorDAO = new VendedorDAO();
-        List<clsPaciente> listaUsuarios = usuario.getListadoPaciente();
+        List<clsPaciente> listaPaciente = paciente.getListadopaciente();
         tablaUsuarios.setModel(modelo);
         String[] dato = new String[10];
-        for (int i = 0; i < listaUsuarios.size(); i++) {
-            dato[0] = Integer.toString(listaUsuarios.get(i).getIdUsuario());
-            dato[1] = listaUsuarios.get(i).getNombreUsuario();
-            dato[2] = listaUsuarios.get(i).getContrasenaUsuario();
-            dato[3] = listaUsuarios.get(i).getUltimaSesionUsuario();
-            dato[4] = listaUsuarios.get(i).getEstatusUsuario();
-            dato[5] = listaUsuarios.get(i).getNombreRealUsuario();
-            dato[6] = listaUsuarios.get(i).getCorreoUsuario();
-            dato[7] = listaUsuarios.get(i).getTelefonoUsuario();
-            dato[8] = listaUsuarios.get(i).getDireccionUsuario();
-            dato[9] = Integer.toString(listaUsuarios.get(i).getTipoUsuario());
+        for (int i = 0; i < listaPaciente.size(); i++) {
+            dato[0] = Integer.toString(listaPaciente.get(i).getPk_idPaciente());
+            dato[1] = listaPaciente.get(i).getNombrePaci();
+            dato[2] = listaPaciente.get(i).getApellidoPaci();
+            dato[3] = listaPaciente.get(i).getFechaNacimiento();
+            dato[4] = Integer.toString(listaPaciente.get(i).getGenero());
+            dato[5] = listaPaciente.get(i).getDireccionPAci();
+            dato[6] = Integer.toString(listaPaciente.get(i).getTelefono());
+            dato[7] = Integer.toString(listaPaciente.get(i).getEstadoPaci());
+            dato[8] = Integer.toString(listaPaciente.get(i).getFk_idReferencia());
+
             modelo.addRow(dato);
         }       
     }
@@ -441,9 +441,9 @@ int codigoAplicacion=10;
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         // TODO add your handling code here:
         int registrosBorrados=0;
-        clsUsuario usuario = new clsUsuario();
-        usuario.setIdUsuario(Integer.parseInt(txtbuscado.getText()));
-        registrosBorrados=usuario.setBorrarUsuario(usuario);
+        clsPaciente paciente = new clsPaciente();
+        paciente.setPk_idPaciente(Integer.parseInt(txtbuscado.getText()));
+        registrosBorrados=paciente.setBorrarpaciente(paciente);
         JOptionPane.showMessageDialog(null, "Registro Borrado\n", 
                     "Información del Sistema", JOptionPane.INFORMATION_MESSAGE);
         llenadoDeTablas();

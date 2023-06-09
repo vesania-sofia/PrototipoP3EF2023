@@ -174,23 +174,23 @@ public class clsPaciente {
         daoPaciente daoPaciente = new daoPaciente();
         return daoPaciente.consultaPacientePorId(Paci);
     }    
-    public List<clsPaciente> getListadoMonedas()
+    public List<clsPaciente> getListadopaciente()
     {
         daoPaciente daoPaciente = new daoPaciente();
         List<clsPaciente> listadoMonedas = daoPaciente.consultaPaciente();
         return listadoMonedas;
     }
-    public int setBorrarMoneda(clsPaciente Paci)
+    public int setBorrarpaciente(clsPaciente Paci)
     {
         daoPaciente daoPaciente = new daoPaciente();
         return daoPaciente.borrarPaciente(Paci);
     }          
-    public int setIngresarMoneda(clsPaciente Paci)
+    public int setIngresarpaciente(clsPaciente Paci)
     {
         daoPaciente daoPaciente = new daoPaciente();
         return daoPaciente.ingresaPaciente(Paci);
     }              
-    public int setModificarMoneda(clsPaciente Paci)
+    public int setModificarpaciente(clsPaciente Paci)
     {
         daoPaciente daoPaciente = new daoPaciente();
         return daoPaciente.actualizaPaciente(Paci);
