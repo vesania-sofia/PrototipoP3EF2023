@@ -435,6 +435,8 @@ int codigoAplicacion=10;
                         .addContainerGap(64, Short.MAX_VALUE))))
         );
 
+        getAccessibleContext().setAccessibleName("Mantenimiento Paciente");
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -458,17 +460,17 @@ int codigoAplicacion=10;
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         String cont=txtContrasena.getText(),conf=txtConfContraseña.getText();
         if(cont.equals(conf)){
-            clsUsuario usuario = new clsUsuario();
-            usuario.setNombreUsuario(txtNombre.getText());
-            usuario.setContrasenaUsuario(txtContrasena.getText());
-            usuario.setUltimaSesionUsuario(txtUltimaSesion.getText());
-            usuario.setEstatusUsuario(txtEstatus.getText());
-            usuario.setNombreRealUsuario(txtNombreReal.getText());
-            usuario.setCorreoUsuario(txtCorreo.getText());
-            usuario.setTelefonoUsuario(txtTelefono.getText());
-            usuario.setDireccionUsuario(txtDireccion.getText());
-            usuario.setTipoUsuario(Integer.parseInt(txtTipoUsuario.getText()));
-            usuario.setIngresarUsuario(usuario);
+            clsPaciente paciente = new clsPaciente();
+            paciente.setPk_idPaciente(txtNombre.getText());
+            paciente.setNombrePaci(txtContrasena.getText());
+            paciente.setApellidoPaci(txtUltimaSesion.getText());
+            paciente.setFechaNacimiento(txtEstatus.getText());
+            paciente.setGenero(txtNombreReal.getText());
+            paciente.setDireccionPAci(txtCorreo.getText());
+            paciente.setTelefono(txtTelefono.getText());
+            paciente.setEstadoPaci(txtDireccion.getText());
+            paciente.setFk_idReferencia(Integer.parseInt(txtTipoUsuario.getText()));
+            paciente.setIngresarpaciente(paciente);
             JOptionPane.showMessageDialog(null, "Registro Ingresado\n", 
                         "Información del Sistema", JOptionPane.INFORMATION_MESSAGE);
             int resultadoBitacora=0;
